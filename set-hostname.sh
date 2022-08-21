@@ -12,3 +12,5 @@ sudo sed -i "s/vanilla-debian/$hostname/g" /etc/hosts
 
 echo "Please remove set-hostname.sh in homedir"
 echo "Remember to reboot system"
+
+sed '/set-hostname.sh/d' .bashrc
