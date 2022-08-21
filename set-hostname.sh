@@ -4,7 +4,10 @@
 echo "Type hostname: "
 read hostname
 
-hostnamectl set-hostname $hostname
-sed -i "s/vanilla-debian/$hostname/g" /etc/hosts
+echo "Type sudo password: "
+sudo echo "Awesome!"
+
+sudo hostnamectl set-hostname $hostname
+sudo sed -i "s/vanilla-debian/$hostname/g" /etc/hosts
 
 echo "Remember to reboot system"
